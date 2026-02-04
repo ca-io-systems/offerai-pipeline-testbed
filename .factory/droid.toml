@@ -1,0 +1,16 @@
+[permissions.shell]
+blocked_commands = [
+  "rm -rf",
+  "git reset --hard",
+  "git clean -f",
+  "git branch -D",
+  "git branch -d",
+  "git push --force",
+  "git push -f",
+  "git checkout -- .",
+  "git restore .",
+  "git stash drop",
+  "git reflog expire",
+  "sudo",
+  "chmod 777"
+]
