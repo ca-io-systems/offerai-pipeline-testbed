@@ -1,0 +1,49 @@
+@import "tailwindcss";
+
+:root {
+  --color-primary: #FF5A5F;
+  --color-dark-text: #484848;
+  --color-secondary-text: #767676;
+  --color-border: #EBEBEB;
+  --color-background: #F7F7F7;
+  --color-success: #008A05;
+  --color-warning: #FFB400;
+  --color-error: #C13515;
+}
+
+body {
+  color: var(--color-dark-text);
+}
+
+@keyframes checkmark {
+  0% {
+    stroke-dashoffset: 100;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes scale-in {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.animate-checkmark {
+  animation: scale-in 0.5s ease-out forwards;
+}
+
+.animate-checkmark-path {
+  stroke-dasharray: 100;
+  stroke-dashoffset: 100;
+  animation: checkmark 0.5s ease-out 0.3s forwards;
+}
