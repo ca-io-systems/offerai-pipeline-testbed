@@ -1,1 +1,2 @@
-console.log("Hello from offerai-pipeline-testbed!");
+// Entry point - This is a Next.js app, run with `bun dev`
+export {}
