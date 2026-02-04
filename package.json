@@ -3,12 +3,26 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
     "typecheck": "tsc --noEmit",
     "test": "bun test",
-    "lint": "echo 'no linter configured'"
+    "lint": "echo 'no linter configured'",
+    "db:push": "bun src/db/push.ts",
+    "db:seed": "bun src/db/seed.ts"
   },
   "devDependencies": {
-    "typescript": "^5.7.0",
-    "@types/bun": "latest"
+    "@types/bun": "latest",
+    "@types/react": "^19.2.11",
+    "@types/react-dom": "^19.2.3",
+    "drizzle-kit": "^0.31.8",
+    "typescript": "^5.7.0"
+  },
+  "dependencies": {
+    "drizzle-orm": "^0.45.1",
+    "next": "15",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4"
   }
 }
